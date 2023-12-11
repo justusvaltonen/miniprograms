@@ -1,0 +1,16 @@
+
+Created:	12.12.2023
+################################################################################################
+
+------------------------------------------------------------------------------------------------
+Sweet humiliating failing seems to be the thing that keeps a n00b going. This dir exists so that all sorts of things that don't go our way can be logged. While I do write my documents all over repeatedly, some other fails don't need to be repeated. DRY!
+
+(1) Branches
+(1.1) Wrong branch active after pull.
+-I used Web-GUI on GitHub to create another branch for developing. Now what happened is that I ended up pulling the "main" and the namings of branches went all stoopid looking.
+
+
+################################################################################################
+## End of File
+################################################################################################
+
