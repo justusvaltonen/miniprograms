@@ -15,6 +15,7 @@ Input:
 Privilages:
 -Is there a possibility of escalation?
 -Is root enabled?
+-What files need what minimal permissions?
 
 Returning and background:
 -Is code executed till the end?
