@@ -2,13 +2,14 @@
 #include	<stdio.h>
 #include	<unistd.h>
 
-int	detobi();	//3
-int	bitodec();	//4
+int	decimal_to_binary();	//3
+int	binary_to_decimal();	//4
 int	binary();	//2
 int	hex();		//5
-int	itohex();	//6
-int	hextoi();	//7
-int	power(int input, int p);
+int	integer_to_hex();	//6
+int	hex_to_integer();	//7
+
+int	power(int input, int p);    //x to the power of y
 
 int	power(int input, int p)
 {
@@ -23,7 +24,7 @@ int	power(int input, int p)
 	return(result);
 }
 
-int	hextoi()
+int	hex_to_integer()
 {
 	char input[30];
 	int i = 0;
@@ -59,7 +60,7 @@ int	hextoi()
 	return(88);
 }
 
-int	itohex()
+int	integer_to_hex()
 {
 	int input;
 	int reminder;
@@ -79,7 +80,7 @@ int	itohex()
 			temp[i] = reminder + 87;
 		else
 		{
-			puts("Error in itohex");
+			puts("Error in integer_to_hex");
 			return(6);
 		}
 		input /= 16;
@@ -91,7 +92,7 @@ int	itohex()
 		result[j] = temp[i];
 		j++;
 	}
-	printf("in hex:\n%s\n", result);
+	printf("in hex:\n0x%s\n", result);
 	return(88);
 }
 
@@ -112,9 +113,9 @@ int	hex()
 		else if(options == 666)
 			return(666);
 		else if(options == 1)
-			options = itohex();
+			options = integer_to_hex();
 		else if(options == 2)
-			options = hextoi();
+			options = hex_to_integer();
 		else
 		{
 			puts("Error in hex");
@@ -141,9 +142,9 @@ int	binary()
 		else if(options == 666)
 			return(666);
 		else if(options == 1)
-			options = detobi();
+			options = decimal_to_binary();
 		else if(options == 2)
-			options = bitodec();
+			options = binary_to_decimal();
 		else
 		{
 			puts("Error in binary");
@@ -155,7 +156,7 @@ int	binary()
 	return(2);
 }
 
-int	bitodec()
+int	binary_to_decimal()
 {
 	puts("Punch in a binary number:");
 	char in_array[40];
@@ -177,7 +178,7 @@ int	bitodec()
 	return(88);
 }
 
-int	detobi()
+int	decimal_to_binary()
 {
 	int i = 0;
 	int j = 0;
@@ -204,7 +205,7 @@ int	detobi()
 		printf("In binary: %s\n\n", result);
 		return(88);
 	}
-	puts("Error in detobi");
+	puts("Error in decimal_to_binary");
 	return(88);
 }
 
